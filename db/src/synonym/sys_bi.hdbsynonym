@@ -4,5 +4,11 @@
       "object": "M_TIME_DIMENSION",
       "schema": "_SYS_BI"
     }
+  },
+  "MyProject.db.synonym::Synonym_1": {
+    "target": {
+      "object": "ACDOCA",
+      "schema": "SAPERP"
+    }
   }
 }
