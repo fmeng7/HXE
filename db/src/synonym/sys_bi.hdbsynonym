@@ -10,5 +10,12 @@
       "object": "ACDOCA",
       "schema": "SAPERP"
     }
+  },
+  "MyProject.db.synonym::Airport": {
+    "target": {
+      "object": "MyProject.db::Airport",
+      "schema": "FMENG_LAB_1",
+      "database": "HXE"
+    }
   }
 }
