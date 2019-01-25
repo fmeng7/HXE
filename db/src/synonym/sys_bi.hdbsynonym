@@ -1,0 +1,8 @@
+{
+  "MyProject.db.synonym::Synonym_0": {
+    "target": {
+      "object": "M_TIME_DIMENSION",
+      "schema": "_SYS_BI"
+    }
+  }
+}

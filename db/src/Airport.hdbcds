@@ -1,0 +1,13 @@
+namespace MyProject.db;
+
+/*@@layout{"layoutInfo":{"x":-437,"y":-119.5}}*/
+entity Airport {
+    key CODE       : String(3)      not null;
+        NAME       : String(50);
+        CITY       : String(20);
+        COUNTRY    : String(20)     default 'USA';
+        TIMEZONE   : String(3);
+        LATITUDE   : Decimal(12, 6) not null;
+        LONGTITUDE : Decimal(12, 6) not null;
+        LOCATION   : hana.ST_POINT(4326);
+};

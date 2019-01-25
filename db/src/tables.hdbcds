@@ -1,0 +1,44 @@
+namespace MyProject.db;
+
+/*
+* DataTypeDefinition
+*/
+type NameT:String(20);
+type PhoneT:String(15);
+type EmailT:String(30);
+type CityT:String(20);
+type CountryT:String(25);
+type CodeT:String(3);
+type FlightT:String(6);
+type PriceT:Decimal(12,2);
+type ModelT:String(10);
+type SeatT:String(4);
+/*
+* Structuredefinition
+* technicalstructuretobeusedinallentities
+* tostorelastchangedtimestampandlastchangedbyuser
+*/
+type ChangeT{
+USER: String(20);//ChangedbyUser
+TIMESTAMP:UTCTimestamp;
+};
+entity Plane
+{
+key REGNO:Integer;//RegistrationNumber
+MODEL:String(10);//ModelName
+MANUFACTURER:String(20);//Manufacturer
+TYPE:String(20);//TypeofAircraft
+YEAR:Integer;//YearofManufacture
+REGDATE:LocalDate;//RegistrationDate
+MAXSEAT:Integer;//MaximumSeatingCapacity
+ECOSEAT:Integer;//NoofEconomyClassSeats
+BUSSEAT:Integer;//NoofBusinessClassSeats
+FIRSEAT:Integer;//NoofFirstClassSeats
+CHANGE:ChangeT;//LastChangeTimestampandUser
+}
+technical configuration{
+column store;//ColumnTable
+auto merge;//Enableautomerge
+unload priority 5;//Standardsettings
+group type app group subtype FMENG_LAB group name master;
+};
