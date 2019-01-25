@@ -1,11 +1,11 @@
 {
-  "MyProject.db.synonym::Synonym_0": {
+  "MyProject.db.synonym::M_TIME_DIMENSION": {
     "target": {
       "object": "M_TIME_DIMENSION",
       "schema": "_SYS_BI"
     }
   },
-  "MyProject.db.synonym::Synonym_1": {
+  "MyProject.db.synonym::ACDOCA": {
     "target": {
       "object": "ACDOCA",
       "schema": "SAPERP"
